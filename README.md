@@ -8,13 +8,22 @@ Homework 11
 
 ### TranslateAscii
 
-A program that takes in pure hexadecimal input and dumps it as readable ASCII.
+A program that takes in pure hexadecimal input and dumps it as readable ASCII. Input is declared in the inputBuf buffer and inputSize value.
 
 ### Instructions
 
 To run, assemble and load using these commands:
-`nasm - f elf32 -o translateAscii.o translateAscii.asm
-ld -m elf_i386 -o translateAscii translateAscii.o`
+
+```
+nasm -f elf32 -o translateAscii.o translateAscii.asm
+```
+
+```
+ld -m elf_i386 -o translateAscii translateAscii.o
+```
 
 Then, call it using this command:
-`./translateAscii`
+
+```
+./translateAscii
+```
